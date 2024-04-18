@@ -3,6 +3,18 @@
     flex-wrap: wrap;
     gap: 20px;
 }
+.edit{
+    font-size: 24px;
+    width: 25px;
+    text-align: center;
+    background-color: transparent !important;
+    color: black !important;
+}
+.control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .users__card{
     width: 280px;
     padding: 20px;

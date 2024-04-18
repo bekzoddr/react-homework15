@@ -4,3 +4,19 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+.dark{
+  background-color: #010101;
+  color: white;
+  transition: 0.3s all ease-in
+}
+.light{
+  transition: 0.3s all ease-in
+}
+.dark .users__card{
+  background-color: #fff;
+  color: black;
+}
+.dark .home{
+  background-color: #010101 !important;
+  color: white;
+}

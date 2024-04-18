@@ -1,13 +1,13 @@
-import React from 'react'
-import photo from "../../assets/1f937-2642.png"
+import React from "react";
+import photo from "../../assets/empty.webp";
 
 function Empty() {
   return (
-    <div style={{textAlign:"center"}}>
-        <img src={photo} width={250} alt="" />
-        <h2>Empty</h2>
+    <div style={{ textAlign: "center" }}>
+      <img src={photo} width={350} alt="" />
+      <h1>Empty</h1>
     </div>
-  )
+  );
 }
 
-export default Empty
+export default Empty;

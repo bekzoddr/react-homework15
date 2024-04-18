@@ -1,30 +1,30 @@
 import React, { useState } from "react";
 import "./CreateUser.css";
 import { useDispatch } from "react-redux";
-import { addToUsers } from "../../context/usersSlice"
+import { addToUsers } from "../../context/usersSlice";
 
 function CreateUser() {
   const [name, setName] = useState("");
   const [profession, setProfession] = useState("");
   const [age, setAge] = useState("");
   const [gender, setGender] = useState("");
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
-  const handleSubmit = (e)=>{
-    e.preventDefault()
+  const handleSubmit = (e) => {
+    e.preventDefault();
     let newUser = {
-          id: new Date().getTime(),
-          name,
-          profession,
-          age: +age,
-          gender
-    } 
-      dispatch(addToUsers(newUser))
-      setName("")
-      setGender("")
-      setAge("")
-      setProfession("")
-  }
+      id: new Date().getTime(),
+      name,
+      profession,
+      age: +age,
+      gender,
+    };
+    dispatch(addToUsers(newUser));
+    setName("");
+    setGender("");
+    setAge("");
+    setProfession("");
+  };
 
   return (
     <div className="create__user">
@@ -49,11 +49,11 @@ function CreateUser() {
           placeholder="age"
         />
         <select
-         value={gender}
-         onChange={(e) => setGender(e.target.value)}
-         name="" 
-         id=""
-         >
+          value={gender}
+          onChange={(e) => setGender(e.target.value)}
+          name=""
+          id=""
+        >
           <option value="">gender</option>
           <option value="male">male</option>
           <option value="female">female</option>
